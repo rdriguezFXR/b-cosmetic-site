@@ -51,7 +51,7 @@ const Hero = () => {
           <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight">
             Seja distribuidor exclusivo Bellys
           </h2>
-          <button className="bg-[#A58BAC]/30 text-white px-8 py-3 md:py-4 rounded-lg font-bold text-lg border border-[#622A73] hover:bg-[#622A73]/30 hover:scale-105 transition-all duration-300 shadow-lg">
+        <button className="bg-[#201224] text-white px-8 py-3 md:py-4 rounded-lg font-bold text-lg border border-[#622A73] hover:bg-[#622A73]/30 hover:scale-105 transition-all duration-300 shadow-lg">
             Quero ser distribuidor 
           </button>
          
