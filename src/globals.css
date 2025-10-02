@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Cores primárias - Paleta roxa */
+    --primary: 262 45% 35%; /* #622A73 */
+    --primary-light: 262 45% 45%; /* #8B4A9B */
+    --primary-dark: 262 45% 25%; /* #4A1F5A */
+    --primary-foreground: 0 0% 100%; /* Branco */
+    
+    /* Cores douradas */
+    --gold: 45 100% 50%; /* #FFD700 */
+    --gold-light: 45 100% 60%; /* #FFE55C */
+    --gold-dark: 45 100% 40%; /* #CC9900 */
+    --gold-foreground: 0 0% 0%; /* Preto */
+    
+    /* Cores de fundo */
+    --background: 0 0% 100%; /* Branco */
+    --foreground: 0 0% 9%; /* Preto */
+    
+    /* Cores secundárias */
+    --secondary: 0 0% 96%; /* Cinza claro */
+    --secondary-foreground: 0 0% 9%;
+    
+    /* Cores de destaque */
+    --accent: 262 45% 35%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Cores de texto */
+    --muted: 0 0% 45%;
+    --muted-foreground: 0 0% 45%;
+    
+    /* Bordas */
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 262 45% 35%;
+    
+    /* Cards */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
+    
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
+    
+    /* Destrutivo */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Gradientes */
+    --gradient-corporate: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold)) 0%, hsl(var(--gold-light)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-dark)) 100%);
+    --gradient-subtle: linear-gradient(135deg, hsl(var(--secondary)) 0%, hsl(var(--background)) 100%);
+    
+    /* Sombras */
+    --shadow-corporate: 0 10px 25px -5px hsl(var(--primary) / 0.3), 0 8px 10px -6px hsl(var(--primary) / 0.3);
+    --shadow-gold: 0 10px 25px -5px hsl(var(--gold) / 0.3), 0 8px 10px -6px hsl(var(--gold) / 0.3);
+    --shadow-elegant: 0 4px 6px -1px hsl(var(--primary) / 0.1), 0 2px 4px -1px hsl(var(--primary) / 0.06);
+    
+    /* Raio de borda */
+    --radius: 0.5rem;
+  }
+}
+
+@layer utilities {
+  .corporate-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  }
+  
+  .animate-marquee {
+    animation: marquee var(--duration) linear infinite;
+  }
+  
+  .animate-marquee-vertical {
+    animation: marquee-vertical var(--duration) linear infinite;
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+}
