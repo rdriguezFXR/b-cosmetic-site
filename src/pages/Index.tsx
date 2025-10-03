@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
 import CompanyShowcase from "@/components/CompanyShowcase";
+import LeadCaptureForm from "@/components/LeadCaptureForm";
 
 const Index = () => {
   return (
@@ -8,6 +9,7 @@ const Index = () => {
       <Hero />
       <AboutSection />
       <CompanyShowcase />
+      <LeadCaptureForm />
     </>
   );
 };

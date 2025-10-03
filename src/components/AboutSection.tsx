@@ -47,8 +47,8 @@ const AboutSection = () => {
               para milhares de brasileiros.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="corporate" size="lg">
-                Nossa História Completa
+              <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300">
+                Saiba Mais
               </Button>
               <Button variant="outline" size="lg">
                 Fale Conosco

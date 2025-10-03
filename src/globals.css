@@ -65,6 +65,64 @@
     /* Raio de borda */
     --radius: 0.5rem;
   }
+
+  .dark {
+    /* Cores primárias - Paleta roxa (modo escuro) */
+    --primary: 262 45% 45%; /* Mais claro para contraste */
+    --primary-light: 262 45% 55%; /* Ainda mais claro */
+    --primary-dark: 262 45% 35%; /* Mais escuro */
+    --primary-foreground: 0 0% 100%; /* Branco */
+    
+    /* Cores douradas (modo escuro) */
+    --gold: 45 100% 60%; /* Mais brilhante */
+    --gold-light: 45 100% 70%; /* Ainda mais brilhante */
+    --gold-dark: 45 100% 50%; /* Mais escuro */
+    --gold-foreground: 0 0% 0%; /* Preto */
+    
+    /* Cores de fundo (modo escuro) */
+    --background: 0 0% 9%; /* Preto */
+    --foreground: 0 0% 98%; /* Branco */
+    
+    /* Cores secundárias (modo escuro) */
+    --secondary: 0 0% 15%; /* Cinza escuro */
+    --secondary-foreground: 0 0% 98%;
+    
+    /* Cores de destaque (modo escuro) */
+    --accent: 262 45% 45%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Cores de texto (modo escuro) */
+    --muted: 0 0% 65%;
+    --muted-foreground: 0 0% 65%;
+    
+    /* Bordas (modo escuro) */
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 262 45% 45%;
+    
+    /* Cards (modo escuro) */
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 98%;
+    
+    /* Popover (modo escuro) */
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 98%;
+    
+    /* Destrutivo (modo escuro) */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Gradientes (modo escuro) */
+    --gradient-corporate: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold)) 0%, hsl(var(--gold-light)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-dark)) 100%);
+    --gradient-subtle: linear-gradient(135deg, hsl(var(--secondary)) 0%, hsl(var(--background)) 100%);
+    
+    /* Sombras (modo escuro) */
+    --shadow-corporate: 0 10px 25px -5px hsl(var(--primary) / 0.4), 0 8px 10px -6px hsl(var(--primary) / 0.4);
+    --shadow-gold: 0 10px 25px -5px hsl(var(--gold) / 0.4), 0 8px 10px -6px hsl(var(--gold) / 0.4);
+    --shadow-elegant: 0 4px 6px -1px hsl(var(--primary) / 0.2), 0 2px 4px -1px hsl(var(--primary) / 0.1);
+  }
 }
 
 @layer utilities {
